@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Open-Sans", "Assistant", sans-serif;
+}
+
+main {
+  padding-top: 60px; /* Height of the header */
+  padding-bottom: 2px;
+  /* background-color: #e2e8f0; */
+  min-height: calc(100vh - 70px);
+  overflow: auto;
+}
+
+/* ==========================
+   Colors Styles
+   ========================== */
+.text-pink,
+.text-hover-pink:hover {
+  color: #ff3e6c;
+}
+
+.text-grey {
+  color: #c2c2d3;
+}
+
+.text-teal {
+  color: #007185;
+}
+
+.bg-lightgreen {
+  background-color: #c9fde3;
+}
+
+.bg-slate-200 {
+  background-color: #e2e8f0;
+}
+
+.bg-lightgrey {
+  background-color: rgb(243, 243, 243);
+}
+
+.bg-pink {
+  /* background-color: #fc274b; */
+  background-color: #ff3e6c;
+}
+
+.bg-lightgrey {
+  background-color: #e0e0e0;
+}
+
+.border-pink {
+  border-color: #ff3e6c !important;
+}
+
+/* ==========================
+   Button Styles
+   ========================== */
+.btn-pink {
+  background-color: #ff3e6c !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+.btn-pink:hover,
+.bg-pink:hover {
+  opacity: 0.9;
+}
+
+.btn-outline-pink {
+  background-color: transparent !important;
+  color: #ff3e6c !important;
+  border: 1.5px solid #ff3e6c !important;
+  cursor: pointer;
+}
+
+.btn-outline-pink:hover {
+  background-color: #ff3e6c !important;
+  color: white !important;
+}
+
+
+/* ==========================
+   common css styles
+   ========================== */
+.ml-2 {
+  margin-left: 5px;
+}
+
+.border-bottom-grey {
+  border-bottom: 1px solid #dee0ea;
+  padding: 10px 0;
+  margin: 10px 0;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* image  */
+.image-container {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  height: 100%;
+  object-fit: contain;
+  background-color: transparent;
+  mix-blend-mode: multiply;
+}
+
+.pulse-animation {
+  animation: pulse 1.5s infinite ease-in-out;  /* loading component */
+}
+
+@keyframes pulse {
+  0% {
+    background-color: #e0e0e0;
+  }
+  50% {
+    background-color: #f5f5f5;
+  }
+  100% {
+    background-color: #e0e0e0;
+  }
+}
+
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-width-thin {
+  scrollbar-width: none;
+}
+
+/* ==========================
+   Admin Panel Sidebar Styles
+   ========================== */
+.custom-shadow {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+  position: relative;
+}
+
+.hover-bg-slate-200:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+
+/* ==========================
+   Admin => User Table Styles
+   ========================== */
+.user-table {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.user-table th,
+.user-table td {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.user-table th {
+  background-color: #f8f9fa;
+  font-weight: bold;
+}
+
+.delete-icon {
+  display: none;
+}
+
+.position-relative:hover .delete-icon {
+  display: block;
+}
+
+
+/* ==========================
+   User Profile Styles
+   ========================== */
+#userProfileCard .card,
+#userAddress .card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#userProfileCard .card:hover,
+#userAddress .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+#userProfileCard .text-secondary {
+  transition: color 0.3s ease;
+}
+
+
+/* ==========================
+   Product Modal Styles
+   ========================== */
+.close_ {
+  position: absolute !important;
+  top: 0px !important;
+  right: 10px;
+  color: #000 !important;
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  border-radius: 50% !important;
+}
+
+.close_ svg {
+  font-size: 22px;
+}
+
+.badge-success {
+  background-color: #e5f8ed !important;
+  color: #00b853 !important;
+}
+
+.quantityAdjuster {
+  width: 120px;
+  gap: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.1) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantityAdjuster button {
+  min-width: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+  color: #000;
+}
+
+.quantityAdjuster button svg {
+  color: #000;
+}
+
+.quantityAdjuster input {
+  width: 18px !important;
+  border: 0px;
+  background-color: transparent;
+  outline: none;
+  text-align: center;
+}
+
+/* ==========================
+   Product Details Styles
+   ========================== */
+.product-description .nav-link {
+  outline: none;
+  border: none;
+  font-size: 1.1rem !important;
+}
+
+.product-description .nav-link:hover,
+.product-description .nav-link:focus {
+  color: rgba(0, 0, 0, 0.8);
+  background-color: transparent;
+  border: none;
+}
+
+.product-description .active-tab {
+  border: none;
+}
+
+.product-description .nav-tabs .nav-link.active {
+  font-weight: bold !important;
+  color: #ff3e6c !important;
+}
+
+/* ==========================
+   Pagination Styles
+   ========================== */
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pagination a:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.pagination .active a {
+  background-color: black;
+  color: white;
+  border-color: black;
+  cursor: default;
+}
+
+.pagination .disabled a {
+  color: #999;
+  border-color: #ddd;
+  cursor: not-allowed;
+}
+
+/* ==========================
+   Sidebar Styles
+   ========================== */
+.offcanvas {
+  transition: transform 0.3s ease-in-out;
+  max-width: 80%;
+}
+
+@media (min-width: 992px) {
+  .offcanvas {
+    transform: none !important; /* Ensures the sidebar stays in place on large screens */
+  }
+}

@@ -1,0 +1,78 @@
+
+/* Media query for medium screens and up */
+@media (min-width: 601px) and (max-width: 991px) {
+
+
+/* ==========================
+  navbar Styles
+   ========================== */
+.navbar .container-fluid {
+  display: flex !important;
+  justify-content: start !important;
+  align-items: center !important;
+}
+
+.navbar .navbar-brand{
+  margin-left: 1rem !important;
+}
+
+
+/* ==========================
+  admin panel Styles
+   ========================== */
+   
+.adminPanelMain{
+padding: 0 0 3rem !important;
+}
+
+
+.allProductsDiv, .allCategoryPage{
+  padding: 0 4rem 0 0!important;
+}
+
+.user-table{
+  padding-top: 3rem !important;
+}
+
+.uploadProductFormModal{
+  margin-top: 4rem;
+  height: 90%;
+}
+
+/* ==========================
+  Home big-banner-card Styles
+   ========================== */
+  .big-banner-card .col-md-6 {
+    padding-right: 20px;
+  }
+
+  .best-seller-products .module-header {
+    margin: 0 auto !important;
+  }
+
+  .banner-text {
+    top: 10px;
+    left: 10px;
+  }
+
+  .banner-text h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+  }
+}
+
+
+/* ==========================
+   Product Modal Styles
+   ========================== */
+   .zoomSlider .item {
+    height: 80px !important;
+    width: 90px !important;
+  }
+
+
+/* ==========================
+   User section Styles
+   ========================== */
+   

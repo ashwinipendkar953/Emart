@@ -1,0 +1,27 @@
+.footer {
+  z-index: 1000;
+  width: 100%;
+  bottom: 0;
+  overflow-x: hidden;
+  box-shadow: 0px -2px 10px 0px silver;
+}
+
+.footer-icons-div h4 {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  vertical-align: unset;
+}
+
+.center-content img {
+  width: 50px;
+}
+
+.footer .footer-end,
+.footer .footer-info {
+  background-color: rgb(243, 243, 243);
+}
+
+.footer .footer-end {
+  box-shadow: 0px -2px 10px 0px silver; /* Top shadow */
+}

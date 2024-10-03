@@ -1,0 +1,221 @@
+/* BestSellerProducts Component */
+.best-seller-products .module-header {
+  margin: 0px 15rem;
+}
+
+.best-seller-products .entry-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* BigBannerCards Component */
+.big-banner-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+}
+
+.big-banner-card .banner-wrapper {
+  position: relative;
+}
+
+.big-banner-card .banner-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  position: absolute;
+  top: 45px;
+  left: 45px;
+  text-align: left;
+  z-index: 10;
+}
+
+.big-banner-card .banner-text h6 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.big-banner-card .banner-text p {
+  font-size: 1rem;
+}
+
+/* ProductCard Component */
+.product-card {
+  position: relative;
+}
+
+
+.swiper-button-next,
+.swiper-button-prev {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .swiper-button-next,
+.product-card:hover .swiper-button-prev {
+  opacity: 1 !important;
+  transition: opacity 0.3s ease;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 25px !important;
+  font-weight: bold !important;
+  color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.product-card .swiper-pagination {
+  position: absolute;
+  transform: translateY(55%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.product-card:hover .swiper-pagination {
+  opacity: 1;
+}
+
+.product-card .product-badges,
+.productZoom .product-badges {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 50px;
+  z-index: 100;
+}
+
+.product-card .product-badges p,
+.productZoom .product-badges p {
+  padding: 0.375rem 0.75rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  border-radius: 0.25rem;
+  color: #fff;
+  background-color: #2bbef9;
+  align-items: center;
+  width: auto;
+}
+
+.product-card .card:hover {
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
+}
+
+.product-card .product-card-actions {
+  position: absolute;
+  top: 20px;
+  right: -100%;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.product-card .product-card-actions button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px !important;
+  height: 40px !important;
+  width: 40px !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
+  border-radius: 50% !important;
+  background-color: #fff !important;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%) !important;
+  transition: all 0s !important;
+}
+
+.product-card .product-card-actions button svg {
+  color: #000 !important;
+  opacity: 0.8;
+  font-weight: 500 !important;
+  pointer-events: none;
+}
+
+.product-card .product-card-actions button:hover {
+  background-color: #ff3e6c !important;
+}
+
+.product-card .product-card-actions button:hover svg {
+  color: #fff !important;
+}
+
+.product-card .card .add-to-cart-action {
+  display: none;
+}
+
+.product-card .card:hover .add-to-cart-action {
+  display: block;
+}
+
+.product-card .product-images {
+  overflow: hidden;
+}
+
+.product-card .product-images img {
+  transition: all 0.3s ease-in-out;
+}
+
+.product-card .product-images:hover .product-card-actions {
+  opacity: 1;
+  right: 10px;
+}
+
+.product-card .card .product-name {
+  max-width: 15rem;
+}
+
+/* ProductSlideshow container */
+.product-card .product-slideshow {
+  position: relative;
+  width: 100%;
+  /* max-width: 500px; Adjust based on your design */
+  /* margin: auto; */
+}
+
+.product-slideshow .image-container {
+  width: 100%;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.product-slideshow .image-container img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.product-slideshow .dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+  margin: 3px auto 0;
+  padding: 0 10px !important;
+  width: 25%;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.product-card:hover .product-slideshow .dots {
+  opacity: 1;
+}
+
+.product-slideshow .dot {
+  height: 4px;
+  flex-grow: 1;
+  background-color: #d3d3d3;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.product-slideshow .dot.active {
+  background-color: #ff3e6c;
+}
