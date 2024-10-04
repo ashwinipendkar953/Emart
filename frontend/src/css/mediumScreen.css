@@ -60,7 +60,20 @@ padding: 0 0 3rem !important;
     font-weight: bold;
     margin: 0;
   }
-}
+
+  /* ==========================
+   Product Card Styles
+   ========================== */
+   .product-card .product-card-actions {
+    right: 10px !important; 
+    opacity: 1 !important;
+    transition: none !important; 
+  }
+
+  .product-card .card .add-to-cart-action {
+    display: block !important;
+  }
+
 
 
 /* ==========================
@@ -71,8 +84,7 @@ padding: 0 0 3rem !important;
     width: 90px !important;
   }
 
-
 /* ==========================
    User section Styles
    ========================== */
-   
+}

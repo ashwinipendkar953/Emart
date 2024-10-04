@@ -73,7 +73,7 @@
   }
 
   /* ==========================
-   Product card Styles
+   Big banner card Styles
    ========================== */
   .big-banner-card .col-md-6 {
     padding-right: 20px;
@@ -92,14 +92,18 @@
     margin: 0 auto !important;
   }
 
+
+  /* ==========================
+   Product Card Styles
+   ========================== */
   .product-card .product-card-actions {
-    top: 10px;
-    right: -100%;
-    transition: all 0.5s ease-in-out;
+    right: 10px !important; 
+    opacity: 1 !important;
+    transition: none !important; 
   }
 
-  .product-card:hover .product-card-actions {
-    right: 10px;
+  .product-card .card .add-to-cart-action {
+    display: block !important;
   }
 
   .product-card .product-card-actions button {
@@ -107,7 +111,7 @@
     height: 35px !important;
     width: 35px !important;
   }
-}
+
 
 /* ==========================
    Product Modal Styles
@@ -139,4 +143,6 @@
 .cartItemsRow .image-container .product-image {
   max-width: 100% !important;
   max-height: 100% !important;
+}
+
 }

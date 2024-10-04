@@ -97,7 +97,7 @@ const ProductCard = ({ product, isWishlistCard }) => {
     e.stopPropagation();
     e.preventDefault();
     dispatch(removeFromWishlistProduct(productId)).then(() => {
-      dispatch(setIsWishlisted(false));
+      dispatch(setLocalIsWishlisted(false));
       dispatch(getWishlistProducts());
     });
   };
