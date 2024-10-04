@@ -1,8 +1,8 @@
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { FaRegCircleUser } from "react-icons/fa6";
-import { useEffect, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { useEffect } from "react";
+import { FaBars } from "react-icons/fa";
 import { logoutAsync } from "../features/auth/authSlice";
 import { clearUserDetails } from "../features/user/userSlice";
 
@@ -14,7 +14,7 @@ const AdminPanelPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     navigate("/admin-panel/all-products");
-  }, []);
+  }, [navigate]);
 
   const handleLogout = async () => {
     try {
@@ -41,7 +41,7 @@ const AdminPanelPage = () => {
         <div className="offcanvas-header" style={{ marginTop: "4rem" }}>
           <button
             type="button"
-            className="btn-close mt-3"
+            className="btn-close"
             data-bs-dismiss="offcanvas"
           ></button>
         </div>

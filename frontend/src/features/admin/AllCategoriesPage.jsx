@@ -31,7 +31,7 @@ const AllCategoriesPage = () => {
     return <>
         <div className="bg-white py-1 px-4 d-flex justify-content-between align-items-center allCategoryPage">
             <h2 className="font-bold fs-3">All Categories</h2>
-            <button className="btn btn-outline-danger fs-5 px-3 rounded-pill" data-bs-toggle="modal"
+            <button className="btn btn-outline-pink fs-5 px-3 rounded-pill" data-bs-toggle="modal"
                 data-bs-target="#allCategories" onClick={() => handleEditClick(null)}
             >Add Category</button>
         </div>
@@ -61,7 +61,7 @@ const AllCategoriesPage = () => {
                                     </span>
                                 </div>
                                 <div
-                                    className='text-white center-content px-2 bg-danger rounded-circle'
+                                    className='text-white center-content px-2 bg-pink rounded-circle'
                                     onClick={() => handleDeleteClick(category._id) }
                                 >
                                     <MdDelete size={25} />
