@@ -126,13 +126,13 @@
   width: 90px !important;
 }
 
-/* .productDetailsModal .productDetailsCol{
-  margin-top: 0 !important;
-}  */
+.productDetailsModal .productDetailsCol{
+  margin-top: 2rem !important;
+} 
 
-/* .productDetailsModal .productDetailsCol .productZoom{
+.productDetailsModal .productDetailsCol .productZoom{
   height: 400px !important;
-} */
+}
 
 /* ==========================
    Cart Page Styles
