@@ -21,7 +21,7 @@ const NewArrivalsProducts = () => {
   }, [dispatch]);
 
   return (
-    <div className="container-fluid px-4 best-seller-products mb-5" id="latest-products">
+    <div className="container-fluid px-4 best-seller-products" id="latest-products">
       <div className="module-header py-5">
         <div className="d-flex flex-column justify-content-center align-items-center">
           <h3 className="entry-title">New Arrivals</h3>

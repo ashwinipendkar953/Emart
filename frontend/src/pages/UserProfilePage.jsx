@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import  { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, Outlet, useNavigate } from "react-router-dom";
 import { FaBars, FaRegCircleUser } from "react-icons/fa6";
@@ -9,15 +9,11 @@ const UserProfilePage = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { user } = useSelector((state) => state.user);
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-  };
 
   const handleLogout = async () => {
     try {
@@ -44,8 +40,8 @@ const UserProfilePage = () => {
           ></button>
         </div>
         <div className="offcanvas-body">
-          <div className="d-flex flex-column justify-content-center align-items-center">
-            <div>
+          <div className="d-flex flex-column justify-content-center ">
+            <div className="mb-5">
               <Link
                 role="button"
                 className="text-black w-100 center-content text-decoration-none"
@@ -63,7 +59,7 @@ const UserProfilePage = () => {
               </Link>
             </div>
             <p className="text-capitalize mb-0 fw-bold mt-1">{user?.name}</p>
-            <nav>
+            <nav className="">
               <ul className="navbar-nav">
                 <li className="nav-item">
                   <Link className="nav-link" to={"/my/dashboard"}>
@@ -169,7 +165,7 @@ const UserProfilePage = () => {
 
       {/* Main Content */}
       <div className="container-fluid mt-3 flex-grow-1 position-relative d-flex justify-content-between align-items-center">
-        <main className="flex-grow-1 p-4 w-100 h-100">
+        <main className="flex-grow-1 p-4 w-100 h-100 mt-sm-4 userProfilePageMain">
           <Outlet />
         </main>
         <button

@@ -1,4 +1,7 @@
-/* BestSellerProducts Component */
+
+  /* ==========================
+   BestSellersProducts Component Styles
+   ========================== */
 .best-seller-products .module-header {
   margin: 0px 15rem;
 }
@@ -8,7 +11,10 @@
   font-weight: 700;
 }
 
-/* BigBannerCards Component */
+
+  /* ==========================
+    BigBanner Component Styles
+   ========================== */
 .big-banner-card img {
   width: 100%;
   height: auto;
@@ -41,7 +47,11 @@
   font-size: 1rem;
 }
 
-/* ProductCard Component */
+
+
+  /* ==========================
+   Product Card Styles
+   ========================== */
 .product-card {
   position: relative;
 }
@@ -168,7 +178,10 @@
   max-width: 15rem;
 }
 
-/* ProductSlideshow container */
+
+  /* ==========================
+    ProductSlideshow Component Styles
+   ========================== */
 .product-card .product-slideshow {
   position: relative;
   width: 100%;

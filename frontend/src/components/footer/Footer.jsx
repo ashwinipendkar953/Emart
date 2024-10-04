@@ -4,7 +4,7 @@ import FooterInfoIcons from "./FooterInfoIcons";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer mt-5">
       <FooterInfoIcons />
       <FooterInfo />
       <div className="text-center py-3 px-0 mx-0 footer-end d-flex justify-content-center align-items-center">

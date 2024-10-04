@@ -1,11 +1,14 @@
-/* product modal */
+
+  /* ==========================
+   Product Modal Styles
+   ========================== */
 .product-modal .MuiPaper-elevation {
   padding: 25px;
   position: relative;
   max-width: 900px !important;
   width: 900px !important;
   z-index: 200001 !important;
-  height: 580px;
+  height: 540px !important;
   margin: auto;
 }
 
@@ -38,7 +41,10 @@
   height: 100%;
 }
 
-/* Styling for the zoomSlider */
+
+  /* ==========================
+   zoomSlider Styles
+   ========================== */
 .zoomSlider {
   padding-top: 20px;
   padding-right: 15px !important;
@@ -83,6 +89,7 @@
 .zoomSlider .swiper-button-prev:hover {
   color: #ff1a4b;
 }
+
 
 /* Custom positioning for arrows */
 .zoomSlider .swiper-button-next {

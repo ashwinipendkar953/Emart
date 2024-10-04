@@ -55,7 +55,7 @@ const App = () => {
 
   return (
     <>
-      <ToastContainer position="bottom-right" />
+      <ToastContainer position="bottom-right" autoClose={2000}/>
       <Header key={key} />
       <main>
         <Outlet />

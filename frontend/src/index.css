@@ -24,6 +24,8 @@ main {
   overflow: auto;
 }
 
+
+
 /* ==========================
    Colors Styles
    ========================== */
@@ -154,6 +156,8 @@ main {
   scrollbar-width: none;
 }
 
+
+
 /* ==========================
    Admin Panel Sidebar Styles
    ========================== */
@@ -213,6 +217,7 @@ main {
 #userProfileCard .text-secondary {
   transition: color 0.3s ease;
 }
+
 
 
 /* ==========================

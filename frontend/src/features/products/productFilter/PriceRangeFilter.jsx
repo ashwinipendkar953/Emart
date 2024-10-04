@@ -35,7 +35,7 @@ const PriceRangeFilter = ({ priceRange, params, handleUrlChange }) => {
   return (
     <div className="mb-3">
       <label className="form-label fw-bold">Price</label>
-      <Box sx={{ width: 300 }}>
+      <Box sx={{ width: 280 }} className="priceRangeBoxSlider">
         <Slider
           value={priceRange}
           onChange={handlePriceChange}

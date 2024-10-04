@@ -1,6 +1,11 @@
 /* Small screens: max-width 600px */
 
 @media (max-width: 600px) {
+
+  main{
+    overflow: hidden !important;
+  }
+
   .bannerCarousel {
     height: 230px !important;
     width: 100% !important;
@@ -143,6 +148,22 @@
 .cartItemsRow .image-container .product-image {
   max-width: 100% !important;
   max-height: 100% !important;
+}
+
+/* ==========================
+   Product filter Styles
+   ========================== */
+.priceRangeBoxSlider{
+  width: 250px !important;
+}
+
+
+/* ==========================
+   UserProfile page Styles
+   ========================== */
+
+.userProfilePageMain{
+  margin-top: 1.5rem !important;
 }
 
 }

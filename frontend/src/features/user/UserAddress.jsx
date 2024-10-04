@@ -242,7 +242,7 @@ const UserAddress = () => {
           tabIndex="-1"
           aria-labelledby="userAddressModalLabel"
           aria-hidden="true"
-          style={{marginTop: "5rem"}}
+          style={{marginTop: "4rem", height: "90%"}}
         >
           <div className="modal-dialog">
             <div className="modal-content">

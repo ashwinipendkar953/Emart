@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchAllCategories } from "./categorySlice";
 import { NavLink } from "react-router-dom";
-import { clearAllFilters } from "../products/productSlice";
 
 const CategoryList = () => {
   const categories = useSelector((state) => state.categories.categories);
